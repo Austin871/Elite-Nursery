@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(1181.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+span{
+    color: #12ac8e;
+}
+.logo{
+    color: #fff;
+}
+.logo:hover{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style-type: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: #12ac8e;
+}
+.btn{
+    padding: 6px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #12ac8e;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    border: 2px solid #12ac8e;
+    background: transparent;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-text{
+    padding-top: 15rem;
+    padding-right: 55rem;
+    line-height: 1.5;
+    color: rgb(211, 222, 231);
+}
+.content-text h4{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.content-text p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-top: 17px;
+    color: rgb(211, 222, 231);
+}
+.btn-2{
+    margin-top: 1.4rem;
+    padding: 10px 30px;
+    background-color: #12ac8e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+.btn-2:hover{
+    background: transparent;
+    border: 2px solid #12ac8e;
+    cursor: pointer;
+}
+@media screen and (max-width:1080px) {
+    .content-text{
+        padding-top: 15rem;
+        padding-right: 30rem;
+        line-height: 1.5;
+    }
+    .content-text h4{
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+@media screen and (max-width:768px){
+    .content-text{
+        padding-top: 15rem;
+        padding-right: 10rem;
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width:600px){
+    .content-text{
+        padding-top: 15rem;
+        padding-right: 5rem;
+        line-height: 1.5;
+}
+}
+@media screen and (max-width:480px){
+    .content-text{
+        padding-top: 15rem;
+        padding-right: 1rem;
+        line-height: 1.5;
+}
+    nav ul{
+        display: none;
+    }
+}
